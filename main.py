@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import joblib
+import model_loader as ml
 
 app = FastAPI()
 
@@ -17,7 +17,7 @@ class OutputPayload(BaseModel):
 async def read_root():
     return {"message": "Hello World, this is a reloaded test"}
 
-model = joblib.load_model('model.pkl')
+model = ml.load_model(model_path='model.pkl')
 
 @app.post("/echo")
 async def echo(payload: InputPayload):
