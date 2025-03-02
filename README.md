@@ -1,6 +1,6 @@
 # API Project
 
-This project is an API developed in Python, designed to provide predictions using a machine learning model (XGBoost). The API loads a pre-trained model, processes input data, and returns prediction results. The project also includes specific processing functions organized in the `model_functions` folder and offers a streaming mode launch via `stream_launch.py`.
+This project is an API developed in Python, designed to provide price predictions for cars using a machine learning model (XGBoost) trained on a dataset provided by Kaggle user (sidharth178/car-prices-dataset). The API loads a pre-trained model, processes input data, and returns prediction results. The project includes both a wrapped version deployed at the following url : <https://api-project-d7ao.onrender.com/predict>
 
 ## Table of Contents
 
@@ -58,7 +58,10 @@ To start the API on a local server and use streamlit for vizualization of a requ
 ```bash
 make local
 ```
-
+To access the deployed prediction algorithm via its Render API provider :
+```bash
+https://api-project-d7ao.onrender.com/predict
+```
 
 ## Project Structure
 
