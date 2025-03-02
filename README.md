@@ -40,5 +40,7 @@ The purpose of **API Project** is to provide a simple and modular interface to l
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Melmouth/api_project.git
-   Open a terminal in the same directory as main and run :
+
+- Open a terminal in the same directory as main and run :
+   ```bash 
    make install
