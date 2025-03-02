@@ -1,7 +1,7 @@
 .PHONY: run
 
 run:
-	uvicorn main:app --reload
+	uvicorn uvicorn main:app --host 0.0.0.0 --port 10000 --reload
 
 install:
 	pip install -r requirements.txt
