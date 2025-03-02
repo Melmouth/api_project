@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import model_loader as mlo
+from model_functions import model_loader as mlo
 
 app = FastAPI()
 
