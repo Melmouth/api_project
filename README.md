@@ -8,6 +8,7 @@ This project is an API developed in Python, designed to provide price prediction
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Data Structure](#data-structure)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
