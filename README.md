@@ -93,6 +93,11 @@ Here is the allowed format for a request to the Render url :
 
 ## Contributing
 
+This works relies heavily on :
+
+- The course provided by Morgan Gautherot, professor at Edhec Business School (https://github.com/MorganGautherot)
+- The dataset provided by sidharth178 under MIT license. Available at (https://www.kaggle.com/datasets/sidharth178/car-prices-dataset)
+
 Contributions are welcome! Please fork the repository and create a pull request.
 
 ## License
