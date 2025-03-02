@@ -38,9 +38,39 @@ The purpose of **API Project** is to provide a simple and modular interface to l
 ### Installation Steps
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Melmouth/api_project.git
+    ```bash
+    git clone https://github.com/Melmouth/api_project.git
+    ```
 
 2. **Open a terminal in the same directory as main and run:**
-   ```bash 
-   make install
+    ```bash 
+    make install
+    ```
+
+## Usage
+
+To start the API server, run:
+```bash
+python main.py
+```
+
+For streaming mode, use:
+```bash
+python stream_launch.py
+```
+
+## Project Structure
+
+- `main.py`: Entry point for the API server.
+- `stream_launch.py`: Script for launching the streaming mode.
+- `model_functions/`: Folder containing processing and prediction functions.
+- `xgb_model.pkl`: Pre-trained XGBoost model.
+- `Makefile`: Automation of tasks.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
