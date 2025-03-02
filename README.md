@@ -14,7 +14,7 @@ This project is an API developed in Python, designed to provide price prediction
 
 ## Overview
 
-The purpose of **API Project** is to provide a simple and modular interface to leverage an XGBoost model in an API application. This project allows you to:
+The purpose of **API Project** is to provide a simple and modular interface to leverage an XGBoost model in an API application in the context of my EDHEC 2025 Business Data Management Final Evaluation. This project allows you to:
 
 - Load and use a pre-trained model (`xgb_model.pkl`) for making predictions.
 - Provide an entry point via `main.py` to start the API server.
