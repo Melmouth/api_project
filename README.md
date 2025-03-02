@@ -41,6 +41,6 @@ The purpose of **API Project** is to provide a simple and modular interface to l
    ```bash
    git clone https://github.com/Melmouth/api_project.git
 
-- Open a terminal in the same directory as main and run :
+2. **Open a terminal in the same directory as main and run:**
    ```bash 
    make install

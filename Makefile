@@ -1,4 +1,4 @@
-.PHONY: run
+.PHONY: run push
 
 run:
 	uvicorn main:app --host 0.0.0.0 --port 10000 --reload
@@ -16,3 +16,8 @@ local:
 	sleep 2; \
 	@echo "Launching Streamlit app..."; \
 	streamlit run stream_launch.py
+
+push:
+	git add .
+	git commit -m "Auto Push"
+	git push origin main
