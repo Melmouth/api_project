@@ -18,14 +18,14 @@ The purpose of **API Project** is to provide a simple and modular interface to l
 
 - Load and use a pre-trained model (`xgb_model.pkl`) for making predictions.
 - Provide an entry point via `main.py` to start the API server.
-- Offer a streaming launch mode using `stream_launch.py` (if applicable).
+- Offer a streamlit interface launch mode using `stream_launch.py` (for offline use).
 - Organize code into modules to facilitate extensions and maintenance.
 
 ## Features
 
 - **Prediction**: Generate predictions based on user-provided data.
 - **Modularity**: Processing and prediction functions are grouped in the `model_functions` folder.
-- **Streaming Mode**: Dedicated script (`stream_launch.py`) for launching streaming processes.
+- **Streamlit Mode**: Dedicated script (`stream_launch.py`) for launching streamlit interface.
 - **Automation**: A Makefile is included to simplify the execution of various tasks.
 
 ## Installation
@@ -49,20 +49,21 @@ The purpose of **API Project** is to provide a simple and modular interface to l
 
 ## Usage
 
-To start the API server, run:
+To start the API on a local server, run:
 ```bash
-python main.py
+make run
+```
+To start the API on a local server and use streamlit for vizualization of a request
+
+```bash
+make local
 ```
 
-For streaming mode, use:
-```bash
-python stream_launch.py
-```
 
 ## Project Structure
 
 - `main.py`: Entry point for the API server.
-- `stream_launch.py`: Script for launching the streaming mode.
+- `stream_launch.py`: Script for launching the streamlit mode.
 - `model_functions/`: Folder containing processing and prediction functions.
 - `xgb_model.pkl`: Pre-trained XGBoost model.
 - `Makefile`: Automation of tasks.
