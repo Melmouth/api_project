@@ -62,6 +62,25 @@ To access the deployed prediction algorithm via its Render API provider :
 ```bash
 https://api-project-d7ao.onrender.com/predict
 ```
+## Data Structure
+
+Here is the allowed format for a request to the Render url :
+```bash
+{
+  "prod_year": 0, int
+  "mileage": 0, float
+  "cylinders": 0, int
+  "airbags": 0, int
+  "fuel_cng": false, boolean
+  "fuel_diesel": false, boolean
+  "fuel_hybrid": false, boolean
+  "fuel_hydrogen": false, boolean
+  "fuel_lpg": true, boolean
+  "fuel_petrol": false, boolean
+  "fuel_plugin_hybrid": false, boolean
+}
+```
+
 
 ## Project Structure
 
