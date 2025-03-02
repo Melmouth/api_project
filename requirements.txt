@@ -13,6 +13,7 @@ mdurl==0.1.2
 ml_dtypes==0.5.1
 namex==0.0.8
 numpy==2.2.3
+nvidia-nccl-cu12==2.25.1
 optree==0.14.0
 packaging==24.2
 pickle-mixin==1.0.2
@@ -27,3 +28,4 @@ starlette==0.45.3
 threadpoolctl==3.5.0
 typing_extensions==4.12.2
 uvicorn==0.34.0
+xgboost==2.1.4

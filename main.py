@@ -17,7 +17,7 @@ class OutputPayload(BaseModel):
 async def read_root():
     return {"message": "Hello World, this is a reloaded test"}
 
-model = mlo.load_model(model_path='model.pkl')
+model = mlo.load_model(model_path='xgb_model.pkl')
 
 @app.post("/echo")
 async def echo(payload: InputPayload):
