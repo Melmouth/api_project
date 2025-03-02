@@ -5,13 +5,20 @@ from model_functions import model_loader as mlo
 app = FastAPI()
 
 class InputPayload(BaseModel):
-    sepal_length: float
-    sepal_width: float
-    petal_length: float
-    petal_width: float
+    prod_year: int
+    mileage: float
+    cylinders: int
+    airbags: int
+    fuel_cng: bool
+    fuel_diesel: bool
+    fuel_hybrid: bool
+    fuel_hydrogen: bool
+    fuel_lpg: bool
+    fuel_petrol: bool
+    fuel_plugin_hybrid: bool
 
 class OutputPayload(BaseModel):
-    prediction: str
+    prediction: float
 
 @app.get("/")
 async def read_root():
@@ -25,10 +32,16 @@ async def echo(payload: InputPayload):
 
 @app.post("/predict", response_model=OutputPayload)
 def send_back_information(payload: InputPayload):
-    input = input.dict()
-    prediction = model.predict(input['sepal_length'],
-                                input['sepal_width'],
-                                input['petal_length'],
-                                input['petal_width'])
-    map_predict_to_label = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
-    return {'prediction': map_predict_to_label[prediction]}
+    input = payload.dict()
+    prediction = model.predict([[input['prod_year'],
+                                 input['mileage'],
+                                 input['cylinders'],
+                                 input['airbags'],
+                                 input['fuel_cng'],
+                                 input['fuel_diesel'],
+                                 input['fuel_hybrid'],
+                                 input['fuel_hydrogen'],
+                                 input['fuel_lpg'],
+                                 input['fuel_petrol'],
+                                 input['fuel_plugin_hybrid']]])
+    return {'prediction': prediction[0]}
